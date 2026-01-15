@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home page</title>
+    <link rel="stylesheet" href="style_home_page.css">
 </head>
 <body>
     <nav class="navbar">
@@ -18,15 +19,17 @@
     <main>
     <H1 class="hero-title">REVIEWR</H1>
     <h2 class="hero-subtitle">Welcome! This is your go-to spot for genuine, authentic reviews. Research, compare, and choose wisely to ensure your perfect getaway</h2>
-    <div class="action-bar" style="display: flex; align-items: center; gap: 10px;">
-        <button class="btn-add">+</button ><h3 class="action-title">Add Review</h3>
-        <div class="search-container">
-            <input class="search-input" type="text" placeholder="search a place">
-        </div>
-    </div>
-    <div class="page-container" style="display: flex; align-items: flex-start; gap: 20px;">
+    <div class="page-container">
     <div class="filters-sidebar">
-        <h3 class="sidebar-title">find your perfect stay</h3>
+        <div class="action-bar">
+            <div class="add-review-wrapper">
+                <button class="btn-add">+</button ><h3 class="action-title">Add Review</h3>
+            </div>
+            <div class="search-container">
+                <input class="search-input" type="text" placeholder="search a place">
+            </div>
+        </div>
+        <h3 class="sidebar-title">Find Your Perfect Stay</h3>
         <ul class="filters-list">
             <li>Location:</li>
             <input type="checkbox"><label for="North">North District</label><br>
@@ -39,7 +42,7 @@
             <input type="checkbox"><label for="hotels">B&B's</label><br>
             <input type="checkbox"><label for="hotels">Boutique Hotels</label><br>
             <input type="checkbox"><label for="hotels">Guests houses</label><br>
-            <input type="checkbox"><label for="hotels">villas</label><br><br>
+            <input type="checkbox"><label for="hotels">Villas</label><br><br>
             <li>Vacation Style:</li>
             <input type="checkbox"><label for="urban">Urban</label><br>
             <input type="checkbox"><label for="beach Getaway">Beach Getaway</label><br>
@@ -55,27 +58,41 @@
             <button class="btn-apply">Apply Filters</button>
         </ul>
     </div>
-    <div class="main-content" style="flex: 1;">
+    <div class="main-content">
         <h2 class="section-title">Top Rated</h2>
     <div class="reviews-grid">
         <div class="review-card">
-            <img class="card-image" src="./תמונת צימר.jpg" height="150" width="250"><br>
-            <p>Location: Amirim, israel, 00917623</p>
-            <p>Rating: (stars)</p>
+            <img class="card-image" src="מלון אילת.jpg" height="150" width="250"><br>
+            <p>Location: Eilat, Israel, 005897114</p>
+            <p>Rating: ★★★★★</p>
             <button class="btn-details">press here for more info</button>
         </div>
         <br><br><br>
         <div class="review-card">
             <img class="card-image" src="./תמונת מלון.jpg" height="150" width="250">
-            <p>Location: Eilat, israel, 00584123</p>
-            <p>Rating: (stars)</p>
+            <p>Location: Eilat, Israel, 00584123</p>
+            <p>Rating: ★★★★</p>
             <button class="btn-details">press here for more info</button>
         </div>
         <br><br><br>
         <div class="review-card">
             <img class="card-image" src="./תמונת וילה.jpg" height="150" width="250">
-            <p>Location: caesarea, israel, 00584123</p>
-            <p>Rating: (stars)</p>
+            <p>Location: Caesarea, Israel, 00584123</p>
+            <p>Rating: ★★★★★</p>
+            <button class="btn-details">press here for more info</button>
+        </div>
+        <br><br><br>
+        <div>
+            <img src="./מלון אילת2.jpg" height="150" width="250">
+            <p>Location: Eilat, Israel, 00584123</p>
+            <p>Rating: ★★★★★</p>
+            <button class="btn-details">press here for more info</button>
+        </div>
+        <br><br><br>
+        <div>
+             <img src="./תמונת צימר.jpg" height="150" width="250">
+            <p>Location: Amirim, Israel, 009871200</p>
+            <p>Rating: ★★★★</p>
             <button class="btn-details">press here for more info</button>
         </div>
     </div>
