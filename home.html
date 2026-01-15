@@ -7,9 +7,8 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">logo</div>
+        <div class="logo">logo</div><a href="./לוגו זמני.jpg"></a>
         <ul class="nav-links">
-            <li><a href="./לוגו זמני.jpg"></a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Help</a></li>
@@ -17,23 +16,23 @@
         </ul>
     </nav>
     <main>
-    <H1>REVIEWR</H1>
-    <h2>Welcome! This is your go-to spot for genuine, authentic reviews. Research, compare, and choose wisely to ensure your perfect getaway</h2>
-    <div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-        <button>+</button ><h3>Add Review</h3>
-        <div>
-            <input type="text" placeholder="search a place">
+    <H1 class="hero-title">REVIEWR</H1>
+    <h2 class="hero-subtitle">Welcome! This is your go-to spot for genuine, authentic reviews. Research, compare, and choose wisely to ensure your perfect getaway</h2>
+    <div class="action-bar" style="display: flex; align-items: center; gap: 10px;">
+        <button class="btn-add">+</button ><h3 class="action-title">Add Review</h3>
+        <div class="search-container">
+            <input class="search-input" type="text" placeholder="search a place">
         </div>
     </div>
-    <div>
-        <h3>find your perfect stay</h3>
-        <ul>
+    <div class="page-container" style="display: flex; align-items: flex-start; gap: 20px;">
+    <div class="filters-sidebar">
+        <h3 class="sidebar-title">find your perfect stay</h3>
+        <ul class="filters-list">
             <li>Location:</li>
             <input type="checkbox"><label for="North">North District</label><br>
             <input type="checkbox"><label for="Sharon">Sharon</label><br>
             <input type="checkbox"><label for="Center">Center District</label><br>
-             <input type="checkbox"><label for="Jerousalem">Jerousalem</label><br>  
+            <input type="checkbox"><label for="Jerousalem">Jerousalem</label><br>  
             <input type="checkbox"><label for="South">South District</label><br><br>
             <li>Stay Place:</li>
             <input type="checkbox"><label for="hotels">Hotels</label><br>
@@ -53,33 +52,34 @@
             <input type="checkbox"><label for="Full Board">Full Board</label><br>
             <input type="checkbox"><label for="All-Inclusive">All-Inclusive</label><br>
             <input type="checkbox"><label for="Self-Catering">Self-Catering</label><br><br>
-            <button>Apply Filters</button>
+            <button class="btn-apply">Apply Filters</button>
         </ul>
-        </div>  
     </div>
-        <h2>Top Rated</h2>
-    <div>
-        <div>
-            <img src="./תמונת צימר.jpg" height="150" width="250"><br>
+    <div class="main-content" style="flex: 1;">
+        <h2 class="section-title">Top Rated</h2>
+    <div class="reviews-grid">
+        <div class="review-card">
+            <img class="card-image" src="./תמונת צימר.jpg" height="150" width="250"><br>
             <p>Location: Amirim, israel, 00917623</p>
             <p>Rating: (stars)</p>
-            <button>press here for more info</button>
+            <button class="btn-details">press here for more info</button>
         </div>
         <br><br><br>
-        <div>
-            <img src="./תמונת מלון.jpg" height="150" width="250">
+        <div class="review-card">
+            <img class="card-image" src="./תמונת מלון.jpg" height="150" width="250">
             <p>Location: Eilat, israel, 00584123</p>
             <p>Rating: (stars)</p>
-            <button>press here for more info</button>
+            <button class="btn-details">press here for more info</button>
         </div>
         <br><br><br>
-        <div>
-            <img src="./תמונת וילה.jpg" height="150" width="250">
+        <div class="review-card">
+            <img class="card-image" src="./תמונת וילה.jpg" height="150" width="250">
             <p>Location: caesarea, israel, 00584123</p>
             <p>Rating: (stars)</p>
-            <button>press here for more info</button>
+            <button class="btn-details">press here for more info</button>
         </div>
-        
+    </div>
+    </div>
     </div>
     </main>
 </body>
