@@ -1,0 +1,14 @@
+/* Reset בסיסי */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* גוף האתר */
+body {
+  font-family: Arial, sans-serif;
+  direction: ltr; /* או rtl אם תעברי לעברית */
+  background-color: #fff;
+  color: #222;
+}
