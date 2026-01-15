@@ -6,8 +6,20 @@
     <title>home page</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">logo</div>
+        <ul class="nav-links">
+            <li><a href="./לוגו זמני.jpg"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+    <main>
     <H1>REVIEWR</H1>
     <h2>Welcome! This is your go-to spot for genuine, authentic reviews. Research, compare, and choose wisely to ensure your perfect getaway</h2>
+    <div>
     <div style="display: flex; align-items: center; gap: 10px;">
         <button>+</button ><h3>Add Review</h3>
         <div>
@@ -16,40 +28,34 @@
     </div>
     <div>
         <h3>find your perfect stay</h3>
-        <nav>
-           <ul>
-            <li>
-                <label for="North">North District</label>
-                <select name="North" id="">
-                    <option value="hotels">Hotels</option>
-                    <option value="b&b">B&B's</option>
-                    <option value="boutique hotels">Boutique Hotels</option>
-                    <option value="villa">Villas</option>
-                    <option value="guesthouse">Guesthous</option>
-                </select>
-            </li>
-            <li>
-                <label for="Center">Center District</label>
-                <select name="Center" id="">
-                    <option value="hotels">Hotels</option>
-                    <option value="b&b">B&B's</option>
-                    <option value="boutique hotels">Boutique Hotels</option>
-                    <option value="villa">Villas</option>
-                    <option value="guesthouse">Guesthous</option>
-                </select>
-            </li>
-            <li>
-                <label for="South">South District</label>
-                <select name="South" id="">
-                    <option value="hotels">Hotels</option>
-                    <option value="b&b">B&B's</option>
-                    <option value="boutique hotels">Boutique Hotels</option>
-                    <option value="villa">Villas</option>
-                    <option value="guesthouse">Guesthous</option>
-                </select>
-            </li>
-           </ul>
-        </nav>
+        <ul>
+            <li>Location:</li>
+            <input type="checkbox"><label for="North">North District</label><br>
+            <input type="checkbox"><label for="Sharon">Sharon</label><br>
+            <input type="checkbox"><label for="Center">Center District</label><br>
+             <input type="checkbox"><label for="Jerousalem">Jerousalem</label><br>  
+            <input type="checkbox"><label for="South">South District</label><br><br>
+            <li>Stay Place:</li>
+            <input type="checkbox"><label for="hotels">Hotels</label><br>
+            <input type="checkbox"><label for="hotels">B&B's</label><br>
+            <input type="checkbox"><label for="hotels">Boutique Hotels</label><br>
+            <input type="checkbox"><label for="hotels">Guests houses</label><br>
+            <input type="checkbox"><label for="hotels">villas</label><br><br>
+            <li>Vacation Style:</li>
+            <input type="checkbox"><label for="urban">Urban</label><br>
+            <input type="checkbox"><label for="beach Getaway">Beach Getaway</label><br>
+            <input type="checkbox"><label for="nature">Nature</label><br>
+            <input type="checkbox"><label for="romantic">Romantic</label><br>
+            <input type="checkbox"><label for="family friendly">Family Friendly</label><br><br>
+            <li>Meal Plans:</li>
+            <input type="checkbox"><label for="Breakfast Included">Breakfast Included</label><br>
+            <input type="checkbox"><label for="Half Board">Half Board</label><br>
+            <input type="checkbox"><label for="Full Board">Full Board</label><br>
+            <input type="checkbox"><label for="All-Inclusive">All-Inclusive</label><br>
+            <input type="checkbox"><label for="Self-Catering">Self-Catering</label><br><br>
+            <button>Apply Filters</button>
+        </ul>
+        </div>  
     </div>
         <h2>Top Rated</h2>
     <div>
@@ -75,5 +81,6 @@
         </div>
         
     </div>
+    </main>
 </body>
 </html>
