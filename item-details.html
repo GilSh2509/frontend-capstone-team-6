@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOICY - פרטי פריט</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/item-details.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="headerPlaceholder"></div>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Back Button -->
+        <div class="back-button">
+            <button id="backBtn" class="btn btn-secondary">  Return To List</button>
+        </div>
+        
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h3>Gallery</h3>
+            <div id="galleryMain" class="gallery-main">
+                Main Image
+            </div>
+            <div id="galleryThumbnails" class="gallery-thumbnails">
+                <!-- Thumbnails will be loaded here -->
+            </div>
+        </section>
+        
+        <!-- Item Header -->
+        <section class="item-header-section">
+            <div class="item-header-top">
+                <div>
+                    <h1 id="itemTitle" class="item-title">Hotel Name</h1>
+                    <p id="itemLocation" class="item-location">Location</p>
+                    <button id="addReviewBtn" class="btn btn-primary">Add A Review +</button>
+                </div>
+                <div id="overallRating" class="overall-rating">
+                    <!-- Rating will be loaded here -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Two Column Section: Rating Summary & General Info -->
+        <div class="two-column-section">
+            <!-- Rating Summary -->
+            <section class="rating-summary">
+                <h3>Rating Summary</h3>
+                <div id="ratingSummary">
+                    <!-- Rating bars will be loaded here -->
+                </div>
+            </section>
+            
+            <!-- General Info -->
+            <section class="general-info">
+                <h3>General Information</h3>
+                <div id="generalInfo">
+                    <!-- Info will be loaded here -->
+                </div>
+            </section>
+        </div>
+        
+        <!-- Amenities Section -->
+        <section class="amenities-section">
+            <h3>Amenities & Services</h3>
+            <div id="amenitiesGrid" class="amenities-grid">
+                <!-- Amenities will be loaded here -->
+            </div>
+        </section>
+        
+        <!-- Location Section -->
+        <section class="location-section">
+            <h3>Location & Surroundings</h3>
+            <div id="locationMap" class="location-map">
+                [Loading Map...]
+            </div>
+            <p id="locationDetails" class="location-details">
+                <!-- Location details will be loaded here -->
+            </p>
+        </section>
+        
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <h3>Reviews</h3>
+            
+            <!-- Filters -->
+            <div class="reviews-filters">
+                <select id="sortReviews">
+                    <option value="date-new">Date: New to Old</option>
+                    <option value="date-old">Date: Old to New</option>
+                    <option value="rating-high">Rating: High to Low</option>
+                    <option value="rating-low">Rating: Low to High</option>
+                    <option value="helpful">Most Helpful</option>
+                </select>
+                
+                <select id="filterReviews">
+                    <option value="all">All Ratings</option>
+                    <option value="5">⭐⭐⭐⭐⭐ 5 Stars</option>
+                    <option value="4">⭐⭐⭐⭐ 4 Stars</option>
+                    <option value="3">⭐⭐⭐ 3 Stars</option>
+                    <option value="2">⭐⭐ 2 Stars</option>
+                    <option value="1">⭐ 1 Star</option>
+                </select>
+            </div>
+            
+            <!-- Reviews Container -->
+            <div id="reviewsContainer">
+                <!-- Reviews will be loaded here -->
+            </div>
+        </section>
+        
+        <!-- Quick Add Review Form -->
+        <section class="add-review-form">
+            <h3>Add a Review</h3>
+            <form id="quickReviewForm">
+                <div class="form-group">
+                    <label>Rating:</label>
+                    <div id="quickRating"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Review:</label>
+                    <textarea id="quickReviewText" rows="4" placeholder="Write your review here..."></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-success"> Send Review</button>
+                    <button type="button" id="addReviewBtn" class="btn btn-primary"> Detailed Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footerPlaceholder"></div>
+    
+    <!-- JavaScript -->
+    <script src="../js/storage.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/item-details.js"></script>
+</body>
+</html>
