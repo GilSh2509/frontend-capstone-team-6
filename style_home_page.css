@@ -1,3 +1,7 @@
+body {
+    font-family: 'Josefin-Sans', sans-serif;
+}
+
 /* Navbar: Sticky at the top */
 .navbar {
     position: sticky;
@@ -23,6 +27,22 @@
     font-weight: bold;
 }
 
+/* Hero Section */
+.hero-section {
+    background-color: #003366; /* Deep Blue */
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.hero-subtitle {
+    max-width: 500px;
+    margin: 10px auto;
+}
+
 /* Page Layout: Sidebar on left, Content on right */
 .page-container {
     display: flex;
@@ -36,7 +56,7 @@
     position: sticky;
     top: 100px; /* Sticks below the navbar */
     min-width: 250px;
-    background-color: #f9f9f9; /* Light grey background for sidebar */
+    background-color: #c8e1f4; /* Very light blue background for sidebar */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -59,11 +79,27 @@
     gap: 10px;
 }
 
+.btn-add {
+    background-color: #ff6600; /* Bright Orange */
+    color: white;
+    border: none;
+    border-radius: 30%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
 .search-input {
     padding: 8px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.sidebar-title {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 /* Main Content Area */
