@@ -1,5 +1,6 @@
 body {
-    font-family: 'Josefin-Sans', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Changa One', sans-serif;
 }
 
 /* Navbar: Sticky at the top */
@@ -56,6 +57,7 @@ body {
     position: sticky;
     top: 100px; /* Sticks below the navbar */
     min-width: 250px;
+    min-width: 200px;
     background-color: #c8e1f4; /* Very light blue background for sidebar */
     padding: 20px;
     border-radius: 8px;
@@ -90,9 +92,15 @@ body {
     font-size: 25px;
 }
 
+.search-container {
+    width: 100%;
+}
+
 .search-input {
     padding: 8px;
-    width: 100%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -102,13 +110,24 @@ body {
     margin-bottom: 15px;
 }
 
+.filters-list {
+    padding-left: 0;
+}
+
+.filters-list li {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 /* Main Content Area */
 .main-content {
     flex: 1;
 }
 
 .review-card {
-    border: 1px solid #eee;
+    border: 1px solid #281a88;
     padding: 15px;
     border-radius: 8px;
     background-color: white;
