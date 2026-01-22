@@ -132,3 +132,10 @@ body {
     border-radius: 8px;
     background-color: white;
 }
+
+.add-review-wrapper a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
