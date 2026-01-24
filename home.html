@@ -6,29 +6,40 @@
     <title>home page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style_home_page.css">
 </head>
 <body>
+    <nav>
+      <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="Item-List.html"></a></li>
+        <li><a href="item-details.html"></a></li>
+        <li><a href="review-form.html"></a></li>
+      </ul>
+    </nav>
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Settings</a></li>
+            <li><a href="home.html"><button class="btn-home"><img src="./home_logo.png" height="25" width="25"></button>Home</a></li>
+            <li><a href="#"><button class="btn-about"><img src="./about_logo.png" height="28" width="25"></button>About</a></li>
+            <li><a href="#"><button class="btn-help"><img src="./help_logo.png" height="28" width="25"></button>Help</a></li>
+            <li><a href="#"><button class="btn-setting"><img src="./setting_logo.png" height="27" width="27"></button>Settings</a></li>
         </ul>
-        <img src="./לוגו זמני.jpg" alt="Logo" height="50">
+        <img src="./logo_reviewr.png" alt="Logo" height="50">
     </nav>
-    <main>
+    <main>  
+    <div class="hero-wrapper">
+        <img src="./chosen_reviewers.png" alt="Chosen Reviewers" height="200" style="border-radius:30%">
     <div class="hero-section">
         <h1 class="hero-title">REVIEWR</h1>
         <h2 class="hero-subtitle">Welcome! This is your go-to spot for genuine, authentic reviews. Research, compare, and choose wisely to ensure your perfect getaway</h2>
+    </div>
     </div>
     <div class="page-container">
     <div class="filters-sidebar">
         <div class="action-bar">
             <div class="add-review-wrapper">
-                <button class="btn-add">+</button ><h3 class="action-title">Add Review</h3>
+                <a href="review-form.html"> <button class="btn-add">+</button ><h3 class="action-title">Add Review</h3></a>   
             </div>
             <div class="search-container">
                 <input class="search-input" type="text" placeholder="search a place">
@@ -60,45 +71,71 @@
             <input type="checkbox"><label for="Full Board">Full Board</label><br>
             <input type="checkbox"><label for="All-Inclusive">All-Inclusive</label><br>
             <input type="checkbox"><label for="Self-Catering">Self-Catering</label><br><br>
-            <button class="btn-apply">Apply Filters</button>
+            <a href="Item-List.html"><button class="btn-apply">Apply Filters</button></a>
         </ul>
     </div>
     <div class="main-content">
         <h2 class="section-title">Top Rated</h2>
     <div class="reviews-grid">
         <div class="review-card">
+            <h3>Hotel Name</h3>
             <img class="card-image" src="מלון אילת.jpg" height="150" width="250"><br>
             <p>Location: Eilat, Israel, 005897114</p>
-            <p>Rating: ★★★★★</p>
-            <button class="btn-details">press here for more info</button>
+            <p>Rating: <span class="stars">★★★★★</span></p>
+            <p>Cleaning Rate: <span class="stars">★★★★★</span></p>
+            <p>Service Rate: <span class="stars">★★★★★</span></p>
+            <p class="review-text">Sarah Miller: "The room was spotless and the staff was incredibly helpful."</p>
+            <p class="review-text">Maya Cohen: "An <strong>absolute dream! </strong> The service was impeccable, and the view from the balcony was breathtaking. Perfect for a relaxing weekend getaway. Highly recommended for families!"</p>
+            <p>see more...</p>
+            <a href="item-details.html"><button class="btn-details">press here for more info</button></a>
         </div>
         <br><br><br>
         <div class="review-card">
+            <h3>Hotel Name</h3>
             <img class="card-image" src="./תמונת מלון.jpg" height="150" width="250">
             <p>Location: Eilat, Israel, 00584123</p>
-            <p>Rating: ★★★★</p>
-            <button class="btn-details">press here for more info</button>
+            <p>Rating: <span class="stars">★★★★</span></p>
+            <p>Cleaning Rate: <span class="stars">★★★★☆</span></p>
+            <p>Service Rate: <span class="stars">★★★★★</span></p>
+            <p class="review-text">"<strong>Great service</strong>, but the bathroom could have been cleaner."</p>
+            <p>see more...</p>
+            <a href="item-details.html"><button class="btn-details">press here for more info</button></a>
         </div>
         <br><br><br>
         <div class="review-card">
+            <h3>Hotel Name</h3>
             <img class="card-image" src="./תמונת וילה.jpg" height="150" width="250">
             <p>Location: Caesarea, Israel, 00584123</p>
-            <p>Rating: ★★★★★</p>
-            <button class="btn-details">press here for more info</button>
+            <p>Rating: <span class="stars">★★★★★</span></p>
+            <p>Cleaning Rate: <span class="stars">★★★★★</span></p>
+            <p>Service Rate: <span class="stars">★★★★☆</span></p>
+            <p class="review-text">"Amazing villa with beautiful views. <strong>Highly recommended!</strong>"</p>
+            <p>see more...</p>
+            <a href="item-details.html"><button class="btn-details">press here for more info</button></a>
         </div>
         <br><br><br>
-        <div>
+        <div class="review-card">
+            <h3>Hotel Name</h3>
             <img src="./מלון אילת2.jpg" height="150" width="250">
             <p>Location: Eilat, Israel, 00584123</p>
-            <p>Rating: ★★★★★</p>
-            <button class="btn-details">press here for more info</button>
+            <p>Rating: <span class="stars">★★★★★</span></p>
+            <p>Cleaning Rate: <span class="stars">★★★★★</span></p>
+            <p>Service Rate: <span class="stars">★★★★★</span></p>
+            <p class="review-text">"<strong>Perfect vacation spot</strong>. Everything was top notch."</p>
+            <p>see more...</p>
+            <a href="item-details.html"><button class="btn-details">press here for more info</button></a>
         </div>
         <br><br><br>
-        <div>
+        <div class="review-card">
+             <h3>Hotel Name</h3>
              <img src="./תמונת צימר.jpg" height="150" width="250">
             <p>Location: Amirim, Israel, 009871200</p>
-            <p>Rating: ★★★★</p>
-            <button class="btn-details">press here for more info</button>
+            <p>Rating: <span class="stars">★★★★</span></p>
+            <p>Cleaning Rate: <span class="stars">★★★★☆</span></p>
+            <p>Service Rate: <span class="stars">★★★★☆</span></p>
+            <p class="review-text">"The most romantic boutique hotel we've ever stayed at. The attention to detail is amazing, and the <strong>atmosphere</strong> is so <strong>peaceful</strong>. We will definitely be back!"</p>
+            <p>see more...</p>
+            <a href="item-details.html"><button class="btn-details">press here for more info</button></a>
         </div>
     </div>
     </div>

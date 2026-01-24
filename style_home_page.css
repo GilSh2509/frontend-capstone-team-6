@@ -1,5 +1,8 @@
 body {
-    font-family: 'Josefin-Sans', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Changa One', sans-serif;
+    background-color: #F5EEDC;
+    color: #183B4E;
 }
 
 /* Navbar: Sticky at the top */
@@ -7,12 +10,16 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: white;
-    border-bottom: 1px solid #ccc;
+    background-color: #183B4E;
+    border-bottom: 1px solid #DDA853;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+
+.navbar img {
+    border-radius: 15px;
 }
 
 .nav-links {
@@ -23,13 +30,17 @@ body {
 
 .nav-links li a {
     text-decoration: none;
-    color: #333;
+    color: #F5EEDC;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 }
 
 /* Hero Section */
 .hero-section {
-    background-color: #003366; /* Deep Blue */
+    background-color: #27548A;
     color: white;
     text-align: center;
     padding: 15px 20px;
@@ -56,7 +67,8 @@ body {
     position: sticky;
     top: 100px; /* Sticks below the navbar */
     min-width: 250px;
-    background-color: #c8e1f4; /* Very light blue background for sidebar */
+    min-width: 200px;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -79,9 +91,13 @@ body {
     gap: 10px;
 }
 
+.stars {
+    color: #DDA853;
+}
+
 .btn-add {
-    background-color: #ff6600; /* Bright Orange */
-    color: white;
+    background-color: #DDA853;
+    color: #183B4E;
     border: none;
     border-radius: 30%;
     width: 30px;
@@ -90,9 +106,15 @@ body {
     font-size: 25px;
 }
 
+.search-container {
+    width: 100%;
+}
+
 .search-input {
     padding: 8px;
-    width: 100%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -102,14 +124,101 @@ body {
     margin-bottom: 15px;
 }
 
+.filters-list {
+    padding-left: 0;
+}
+
+.filters-list li {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 /* Main Content Area */
 .main-content {
     flex: 1;
 }
 
 .review-card {
-    border: 1px solid #eee;
+    border: 1px solid #27548A;
     padding: 15px;
     border-radius: 8px;
     background-color: white;
+}
+
+.review-card img {
+    width: 450px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.add-review-wrapper a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.btn-apply {
+    background-color: #DDA853;
+    color: #183B4E;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-details {
+    background-color: #27548A;
+    color: #F5EEDC;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.nav-icon {
+    color: white;
+    font-size: 20px; 
+    vertical-align: middle;
+}
+.btn-home{
+    background-color:#183B4E;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.btn-about{
+    background-color: #183B4E;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.btn-help{
+    background-color: #183B4E;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.btn-setting{
+   background-color: #183B4E;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+} 
+
+.review-text {
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+}
+.face-card{
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
 }
