@@ -1,0 +1,74 @@
+.headline {
+background-color: #003366;
+color: white;
+text-align: center;
+padding: 15px 20px;
+border-radius: 20px;
+margin: 20px auto;
+width:fit-content;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: url("./eilatbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.rating {
+
+background-color: #79baec;
+padding: 15px 20px;
+border-radius: 20px;
+margin: 20px auto;
+width:fit-content;
+}
+
+
+.stars {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.stars input {
+  position: absolute;
+  left: -9999px;
+}
+
+.stars label {
+  cursor: pointer;
+  font-size: 34px;
+  line-height: 1;
+  color: #ddd;          
+  user-select: none;
+}
+
+
+.stars input:checked ~ label {
+  color: orange;
+}
+
+
+.stars label:hover,
+.stars label:hover ~ label {
+  color: orange;
+}
+
+
+.button
+{
+
+  background-color: #ff6600;
+  padding: 10px ;
+  margin-left: 100px;
+  border: #ff6600;
+  border-radius: 30px;
+  color: white;
+}
+
