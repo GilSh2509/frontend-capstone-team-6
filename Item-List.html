@@ -5,26 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item list page</title>
      <style>
-        .hotel-info {
-            display: flex;
-            border: 2px solid black;
-            padding: 12px;
-            margin: 12px 0;
-            align-items: stretch;
-        }
-        .hotel-info code{
-            margin-left: 10px;
-        }
-        
-        .hotel-info img {
-            width: 200px;
-            height: auto;
-            object-fit: cover;
-        }
+       
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style_home_page.css">
-    <link rel="stylesheet" href="style_home_page.css">
+    
 </head>
 <body>
       <nav class="navbar">
@@ -40,8 +25,9 @@
         <ul>
             <li><a href="index.html"></a></li>
             <li><a href="home.html"></a></li>
-            <li><a href="iten-re.html"></a></li>
-        </ul>
+            <li><a href="item-details.html"></a></li>
+            <li><a href="review-form.html"></a></li>
+         </ul>
     </nav>
    
      <main>
@@ -50,6 +36,45 @@
             Hotels
             </h2>
         </div>
+        <div class="page-container"> 
+        <div class="filters-sidebar">
+        <div class="action-bar">
+            <div class="add-review-wrapper">
+                <a href="review-form.html"> <button class="btn-add">+</button ><h3 class="action-title">Add Review</h3></a>   
+            </div>
+            <div class="search-container">
+                <input class="search-input" type="text" placeholder="search a place">
+            </div>
+        </div>
+        <h3 class="sidebar-title">Find Your Perfect Stay</h3>
+        <ul class="filters-list">
+            <li>Location:</li>
+            <input type="checkbox"><label for="North">North District</label><br>
+            <input type="checkbox"><label for="Sharon">Sharon</label><br>
+            <input type="checkbox"><label for="Center">Center District</label><br>
+            <input type="checkbox"><label for="Jerousalem">Jerousalem</label><br>  
+            <input type="checkbox"><label for="South">South District</label><br><br>
+            <li>Stay Place:</li>
+            <input type="checkbox"><label for="hotels">Hotels</label><br>
+            <input type="checkbox"><label for="hotels">B&B's</label><br>
+            <input type="checkbox"><label for="hotels">Boutique Hotels</label><br>
+            <input type="checkbox"><label for="hotels">Guests houses</label><br>
+            <input type="checkbox"><label for="hotels">Villas</label><br><br>
+            <li>Vacation Style:</li>
+            <input type="checkbox"><label for="urban">Urban</label><br>
+            <input type="checkbox"><label for="beach Getaway">Beach Getaway</label><br>
+            <input type="checkbox"><label for="nature">Nature</label><br>
+            <input type="checkbox"><label for="romantic">Romantic</label><br>
+            <input type="checkbox"><label for="family friendly">Family Friendly</label><br><br>
+            <li>Meal Plans:</li>
+            <input type="checkbox"><label for="Breakfast Included">Breakfast Included</label><br>
+            <input type="checkbox"><label for="Half Board">Half Board</label><br>
+            <input type="checkbox"><label for="Full Board">Full Board</label><br>
+            <input type="checkbox"><label for="All-Inclusive">All-Inclusive</label><br>
+            <input type="checkbox"><label for="Self-Catering">Self-Catering</label><br><br>
+            <a href="Item-List.html"><button class="btn-apply">Apply Filters</button></a>
+        </ul>
+    </div>
         <div class="hotel-info" style="display: flexbox;">
             <img src="./pictures/megicpalace eilat.jpg" alt="MegicPalac"  >
         <code>
@@ -137,7 +162,7 @@ The         hotel features an outdoor pool with a sun terrace and a separate chi
             <br>
             <i class="fa-solid fa-umbrella-beach"></i>
             <span>Beachfront</span>
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, delectus impedit? A veniam natus laborum, cupiditate dolores delectus debitis, placeat odit illo aspernatur, animi dicta reprehenderit aut nisi libero odio?</p>
+            <p>Dan Eilat Hotel offers luxurious rooms with a balcony overlooking the sea or the swimming pool area. The hotel is located in a panoramic location opposite the Red Sea coast, and offers free parking and free Wi-Fi. The hotel's rooms have been recently renovated and are decorated in a modern and vibrant style.</p>
         </code>
        
         </div>
@@ -160,7 +185,8 @@ The         hotel features an outdoor pool with a sun terrace and a separate chi
             <i class="fa-solid fa-umbrella-beach"></i>
             <span>500m from the beach</span>
             
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, delectus impedit? A veniam natus laborum, cupiditate dolores delectus debitis, placeat odit illo aspernatur, animi dicta reprehenderit aut nisi libero odio?</p>
+            <P>Located right by the Red Sea, close to Eilat Mall and Promenade, Aria Hotel offers suites with free Wi-Fi, LCD TV and balcony. Some suites have a private hot tub on the balcony and sea views.
+            The property features swimming pools for adults and children, a large spa with treatment rooms and evening entertainment.</P>
         </code>
        
         </div>
