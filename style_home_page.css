@@ -278,7 +278,7 @@ body {
 }
 
 .nav-links span, .nav-icon-link {
-    filter: brightness(0) invert(1); /* הופך הכל ללבן טהור */
+    filter: brightness(0) invert(1); 
     font-size: 20px;
     opacity: 0.9;
 }
