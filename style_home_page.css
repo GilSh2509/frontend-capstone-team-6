@@ -45,7 +45,7 @@ body {
     text-align: center;
     padding: 15px 20px;
     border-radius: 20px;
-    margin: 20px auto;
+    margin: 20px auto 5px;
     position: relative;
 }
 
@@ -63,7 +63,7 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    padding: 20px;
+    padding: 0 20px 20px;
 }
 
 /* Sidebar: Sticky while scrolling */
@@ -161,6 +161,7 @@ body {
 
 .section-title {
     font-size: 50px;
+    margin-top: 0;
 }
 
 
