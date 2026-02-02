@@ -1,7 +1,8 @@
 body {
-    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Dosis', sans-serif;
     background-color: #F5EEDC;
     color: #183B4E;
+    font-weight: 600;
 }
 
 /* Navbar: Sticky at the top */
@@ -45,17 +46,20 @@ body {
     text-align: center;
     padding: 15px 20px;
     border-radius: 20px;
-    margin: 20px auto 5px;
+    margin: 30px auto 5px;
     position: relative;
 }
 
 .hero-title{
-    font-size: 50px;
+    font-size: 100px;
+    margin: 0;
+    line-height: 1;
 }
 
 .hero-subtitle {
-    max-width: 500px;
-    margin: 10px auto;
+    font-size: 30px;
+    max-width: 1000px;
+    margin: 5px auto 20px;
 }
 
 /* Page Layout: Sidebar on left, Content on right */
@@ -145,7 +149,7 @@ body {
     color: #F5EEDC;
     padding: 20px;
     border-radius: 15px;
-    margin: -30px auto 30px; 
+    margin: -30px auto 10px; 
     width: fit-content;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
@@ -162,8 +166,17 @@ body {
 .section-title {
     font-size: 50px;
     margin-top: 0;
+    text-align: center;
+    background-color: #183B4E;
+    color: #F5EEDC;
+    padding: 10px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: fit-content;
+    margin: 0 auto -30px;
+    position: relative;
+    z-index: 2;
 }
-
 
 .review-card {
     border: 1px solid #27548A;
