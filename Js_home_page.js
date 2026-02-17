@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <li><a href="#"><span>❓</span>Help</a></li>
         </ul>
         <div class="nav-logo">
-            <img src="./images/logo_reviewr.png" alt="Logo" height="50">
+            <img src="./images/image.png" alt="Logo" height="50">
         </div>
     </nav>
     `;
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="filters-sidebar">
         <div class="action-bar">
             <div class="add-review-wrapper">
-                <a href="review form.html">
+                <a href="review-form.html">
                     <button class="btn-add">+</button>
                     <h3 class="action-title">Add Review</h3>
                 </a>
