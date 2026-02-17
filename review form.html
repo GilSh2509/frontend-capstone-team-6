@@ -1,140 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add review</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add review</title>
+
+  <link rel="stylesheet" href="style_home_page.css" />
+
+  <link rel="stylesheet" href="Review_form.css" />
 </head>
+
 <body>
-<header>
-    <img src="/logo_reviewr.png" alt="logo of the website" height="200">
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li>
+        <a href="home.html">
+          <button class="btn-home">
+            <img src="./home_logo.png" height="25" width="25" alt="home" />
+          </button>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <button class="btn-about">
+            <img src="./about_logo.png" height="28" width="25" alt="about" />
+          </button>
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <button class="btn-help">
+            <img src="./help_logo.png" height="28" width="25" alt="help" />
+          </button>
+          Help
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <button class="btn-setting">
+            <img src="./setting_logo.png" height="27" width="27" alt="settings" />
+          </button>
+          Settings
+        </a>
+      </li>
+    </ul>
 
+    <img src="./logo_reviewr.png" alt="Logo" height="50" />
+  </nav>
 
-</header>
-
-
-  <div class = "headline">
-     <h1>Shere with us</h1>
+  <div class="headline">
+    <h1>Share with us</h1>
   </div>
-    
-  <div class = "Cleanliness review" >
+
+  <main class="panel">
+
+ 
+<div class="hotel-picker">
+  <label for="hotelSelect"><b>Choose hotel:</b></label>
+  <select id="hotelSelect">
+    <option value="" selected disabled>-- Select a hotel --</option>
+    <option value="royal_beach">Aria Eilat</option>
+    <option value="hilton_tlv">Hilton TLV</option>
+    <option value="dan_tel_aviv">Dan Tel Aviv</option>
+    <option value="isrotel_king">Isrotel King Solomon</option>
+  </select>
+</div>
+
+    <fieldset>
+      <legend><h4>Cleanliness:</h4></legend>
+      <div class="stars">
+        <input type="radio" id="clean-5" name="cleanliness" value="5"><label for="clean-5">★</label>
+        <input type="radio" id="clean-4" name="cleanliness" value="4"><label for="clean-4">★</label>
+        <input type="radio" id="clean-3" name="cleanliness" value="3"><label for="clean-3">★</label>
+        <input type="radio" id="clean-2" name="cleanliness" value="2"><label for="clean-2">★</label>
+        <input type="radio" id="clean-1" name="cleanliness" value="1"><label for="clean-1">★</label>
+      </div>
+    </fieldset>
+
     
     <fieldset>
-        <legend>
-        <h4>Cleanliness:</h4>
-    </<div id="half-stars-example">
-    <div class="rating-group">
-        <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-        <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-        <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-        <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-        <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-        <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-        <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-        <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-        <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-        <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-        <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-        <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-    </div>
-
+      <legend><h4>Service:</h4></legend>
+      <div class="stars">
+        <input type="radio" id="service-5" name="service" value="5"><label for="service-5">★</label>
+        <input type="radio" id="service-4" name="service" value="4"><label for="service-4">★</label>
+        <input type="radio" id="service-3" name="service" value="3"><label for="service-3">★</label>
+        <input type="radio" id="service-2" name="service" value="2"><label for="service-2">★</label>
+        <input type="radio" id="service-1" name="service" value="1"><label for="service-1">★</label>
+      </div>
     </fieldset>
-  </div>
 
-  <div class = "Service review" >
-    
     <fieldset>
-        <legend>
-        <h4>Service:</h4>
-    </legend>
-    <div id="half-stars-example">
-    <div class="rating-group">
-        <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-        <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-        <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-        <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-        <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-        <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-        <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-        <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-        <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-        <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-        <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-        <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
-    </div>
-    
+      <legend><h4>Overall Experience:</h4></legend>
+
+      <textarea name="overall_review" placeholder="Add your review here…"></textarea>
+
+      <div class="stars">
+        <input type="radio" id="overall-5" name="overall" value="5"><label for="overall-5">★</label>
+        <input type="radio" id="overall-4" name="overall" value="4"><label for="overall-4">★</label>
+        <input type="radio" id="overall-3" name="overall" value="3"><label for="overall-3">★</label>
+        <input type="radio" id="overall-2" name="overall" value="2"><label for="overall-2">★</label>
+        <input type="radio" id="overall-1" name="overall" value="1"><label for="overall-1">★</label>
+      </div>
     </fieldset>
-  </div>
 
-<div class = "Overall Experience" >
-    
-    <fieldset>
-        <legend>
-          <h4>Overall Experience:</h4>
-        </legend>
-        
-
-  
-<br>
-    <textarea name="overall review" id="" placeholder="Add your review here…" ></textarea>
-        
-          <div id="half stars">
-    <div class="rating-group">
-        <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
-        <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
-        <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
-        <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
-        <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
-        <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
-        <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
-        <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
-        <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
-        <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
-        <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
-        <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+    <div class="button-row">
+<button type="button" class="save-btn" id="saveReviewBtn">Save review</button>
     </div>
+  </main>
+  <script>
+  console.log("JS is running ✅");
 
-    </fieldset>
-  </div>
+  const saveBtn = document.getElementById("saveReviewBtn");
+  const hotelSelect = document.getElementById("hotelSelect");
+  const overallText = document.querySelector('textarea[name="overall_review"]');
 
-  
-<br>
-<br><br>
+  function getSelectedValue(name) {
+    const checked = document.querySelector(`input[name="${name}"]:checked`);
+    return checked ? checked.value : "";
+  }
 
-<br>
-<button type="button">Save review</button>
+  function setSelectedValue(name, value) {
+    if (!value) return;
+    const radio = document.querySelector(`input[name="${name}"][value="${value}"]`);
+    if (radio) radio.checked = true;
+  }
+
+  function getHotelKey(hotelId) {
+    return `review_${hotelId}`;
+  }
+
+  function loadHotelReview(hotelId) {
+    const saved = localStorage.getItem(getHotelKey(hotelId));
 
 
+    document.querySelectorAll('input[name="cleanliness"], input[name="service"], input[name="overall"]')
+      .forEach(r => r.checked = false);
+    overallText.value = "";
+
+    if (!saved) return;
+
+    const data = JSON.parse(saved);
+    setSelectedValue("cleanliness", data.cleanliness);
+    setSelectedValue("service", data.service);
+    setSelectedValue("overall", data.overall);
+    overallText.value = data.text || "";
+  }
+
+  function saveReview() {
+    const hotelId = hotelSelect.value;
+
+    if (!hotelId) {
+      alert("Please select a hotel first.");
+      return;
+    }
+
+    const data = {
+      cleanliness: getSelectedValue("cleanliness"),
+      service: getSelectedValue("service"),
+      overall: getSelectedValue("overall"),
+      text: overallText.value.trim()
+    };
+
+    localStorage.setItem(getHotelKey(hotelId), JSON.stringify(data));
+
+    alert("The review was saved successfully!");
+  }
+
+
+  saveBtn.addEventListener("click", saveReview);
+
+  hotelSelect.addEventListener("change", () => {
+    loadHotelReview(hotelSelect.value);
+  });
+</script>
 
 </body>
 </html>
