@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Add review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style_home_page.css" />
 
@@ -11,45 +14,6 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li>
-        <a href="home.html">
-          <button class="btn-home">
-            <img src="./home_logo.png" height="25" width="25" alt="home" />
-          </button>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <button class="btn-about">
-            <img src="./about_logo.png" height="28" width="25" alt="about" />
-          </button>
-          About
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <button class="btn-help">
-            <img src="./help_logo.png" height="28" width="25" alt="help" />
-          </button>
-          Help
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <button class="btn-setting">
-            <img src="./setting_logo.png" height="27" width="27" alt="settings" />
-          </button>
-          Settings
-        </a>
-      </li>
-    </ul>
-
-    <img src="./logo_reviewr.png" alt="Logo" height="50" />
-  </nav>
-
   <div class="headline">
     <h1>Share with us</h1>
   </div>
@@ -60,7 +24,7 @@
 <div class="hotel-picker">
   <label for="hotelSelect"><b>Choose hotel:</b></label>
   <select id="hotelSelect">
-    <option value="" selected disabled>-- Select a hotel --</option>
+    <option value="" selected disabled>-- Select an hotel --</option>
     <option value="royal_beach">Aria Eilat</option>
     <option value="hilton_tlv">Hilton TLV</option>
     <option value="dan_tel_aviv">Dan Tel Aviv</option>
@@ -109,72 +73,7 @@
 <button type="button" class="save-btn" id="saveReviewBtn">Save review</button>
     </div>
   </main>
-  <script>
-  console.log("JS is running ✅");
-
-  const saveBtn = document.getElementById("saveReviewBtn");
-  const hotelSelect = document.getElementById("hotelSelect");
-  const overallText = document.querySelector('textarea[name="overall_review"]');
-
-  function getSelectedValue(name) {
-    const checked = document.querySelector(`input[name="${name}"]:checked`);
-    return checked ? checked.value : "";
-  }
-
-  function setSelectedValue(name, value) {
-    if (!value) return;
-    const radio = document.querySelector(`input[name="${name}"][value="${value}"]`);
-    if (radio) radio.checked = true;
-  }
-
-  function getHotelKey(hotelId) {
-    return `review_${hotelId}`;
-  }
-
-  function loadHotelReview(hotelId) {
-    const saved = localStorage.getItem(getHotelKey(hotelId));
-
-
-    document.querySelectorAll('input[name="cleanliness"], input[name="service"], input[name="overall"]')
-      .forEach(r => r.checked = false);
-    overallText.value = "";
-
-    if (!saved) return;
-
-    const data = JSON.parse(saved);
-    setSelectedValue("cleanliness", data.cleanliness);
-    setSelectedValue("service", data.service);
-    setSelectedValue("overall", data.overall);
-    overallText.value = data.text || "";
-  }
-
-  function saveReview() {
-    const hotelId = hotelSelect.value;
-
-    if (!hotelId) {
-      alert("Please select a hotel first.");
-      return;
-    }
-
-    const data = {
-      cleanliness: getSelectedValue("cleanliness"),
-      service: getSelectedValue("service"),
-      overall: getSelectedValue("overall"),
-      text: overallText.value.trim()
-    };
-
-    localStorage.setItem(getHotelKey(hotelId), JSON.stringify(data));
-
-    alert("The review was saved successfully!");
-  }
-
-
-  saveBtn.addEventListener("click", saveReview);
-
-  hotelSelect.addEventListener("change", () => {
-    loadHotelReview(hotelSelect.value);
-  });
-</script>
-
+  <script src="Review_form.js"></script>
 </body>
 </html>
+
