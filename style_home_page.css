@@ -68,6 +68,7 @@ body {
     align-items: flex-start;
     gap: 20px;
     padding: 0 20px 20px;
+    margin-top: 60px;
 }
 
 /* Sidebar: Sticky while scrolling */
@@ -145,17 +146,14 @@ body {
     display: flex;
     justify-content: center;
     gap: 50px;
-    background-color: #183B4E;
-    color: #F5EEDC;
-    padding: 20px;
-    border-radius: 15px;
-    margin: -30px auto 10px; 
-    width: fit-content;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background-color: #DDA853;
+    color: #183B4E;
+    width: 100%;
 }
 
 .stat-item { text-align: center; }
 .stat-number { display: block; font-size: 24px; font-weight: bold; color: #DDA853; }
+.stat-number { display: block; font-size: 24px; font-weight: bold; color: #183B4E; }
 .stat-label { font-size: 14px; text-transform: uppercase; }
 
 /* Main Content Area */
