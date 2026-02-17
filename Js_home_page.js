@@ -34,7 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <input type="checkbox"><label for="Sharon">Sharon</label><br>
             <input type="checkbox"><label for="Center">Center District</label><br>
             <input type="checkbox"><label for="Jerousalem">Jerousalem</label><br>
-            <input type="checkbox"><label for="South">South District</label><br><br>
+            <input type="checkbox"><label for="South">South District</label><br>
+            <input type="checkbox"><label for="Eilat">Eilat</label><br><br>
             <li>Stay Place</li>
             <input type="checkbox"><label for="hotels">Hotels</label><br>
             <input type="checkbox"><label for="hotels">B&B's</label><br>
