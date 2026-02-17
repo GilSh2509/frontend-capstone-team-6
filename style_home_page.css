@@ -315,3 +315,64 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     color: #183B4E;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .page-container {
+        flex-direction: column;
+    }
+    
+    .filters-sidebar {
+        width: 100%;
+        box-sizing: border-box;
+        position: static;
+        margin-top: 20px !important;
+    }
+    
+    .main-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .stats-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .reviewer-of-month {
+        position: static;
+        margin: 20px auto;
+        width: fit-content;
+    }
+
+    /* Force the flex container inside review cards to stack vertically */
+    .review-card > div[style*="display: flex"] {
+        flex-direction: column !important;
+    }
+    
+    .review-card img.card-image {
+        width: 100%;
+        height: auto;
+    }
+}
