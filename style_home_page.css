@@ -1,8 +1,8 @@
 body {
-    font-family: 'Anton', sans-serif;
-    font-family: 'Changa One', sans-serif;
+    font-family: 'Dosis', sans-serif;
     background-color: #F5EEDC;
     color: #183B4E;
+    font-weight: 600;
 }
 
 /* Navbar: Sticky at the top */
@@ -25,7 +25,8 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    flex: 1;
+    justify-content: space-evenly;
 }
 
 .nav-links li a {
@@ -45,13 +46,20 @@ body {
     text-align: center;
     padding: 15px 20px;
     border-radius: 20px;
-    margin: 20px auto;
-    width: fit-content;
+    margin: 30px auto 5px;
+    position: relative;
+}
+
+.hero-title{
+    font-size: 100px;
+    margin: 0;
+    line-height: 1;
 }
 
 .hero-subtitle {
-    max-width: 500px;
-    margin: 10px auto;
+    font-size: 30px;
+    max-width: 1000px;
+    margin: 5px auto 20px;
 }
 
 /* Page Layout: Sidebar on left, Content on right */
@@ -59,7 +67,8 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    padding: 20px;
+    padding: 0 20px 20px;
+    margin-top: 60px;
 }
 
 /* Sidebar: Sticky while scrolling */
@@ -67,7 +76,6 @@ body {
     position: sticky;
     top: 100px; /* Sticks below the navbar */
     min-width: 250px;
-    min-width: 200px;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -134,24 +142,64 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+.stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(221, 168, 83);
+    backdrop-filter: blur(5px);
+    color: #183B4E;
+    width: 100%;
+}
+
+.stat-item { text-align: center; }
+.stat-number { display: block; font-size: 24px; font-weight: bold; color: #DDA853; }
+.stat-number { display: block; font-size: 24px; font-weight: bold; color: #183B4E; }
+.stat-label { font-size: 14px; text-transform: uppercase; }
 
 /* Main Content Area */
 .main-content {
     flex: 1;
 }
 
+.section-title {
+    font-size: 50px;
+    margin-top: 0;
+    text-align: center;
+    background-color: #183B4E;
+    color: #F5EEDC;
+    padding: 10px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: fit-content;
+    margin: 0 auto -30px;
+    position: relative;
+    z-index: 2;
+}
+
 .review-card {
     border: 1px solid #27548A;
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.review-card h3{
+    font-size: 30px;
 }
 
 .review-card img {
     width: 450px;
-    height: 280px;
+    height: 300px;
     object-fit: cover;
     border-radius: 5px;
+    flex-shrink: 0;
 }
 
 .add-review-wrapper a {
@@ -171,6 +219,22 @@ body {
     font-weight: bold;
     display: block;
     margin: 0 auto;
+}
+.reviewer-card-mini {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-left: 4px solid #DDA853;
+}
+
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .btn-details {
@@ -221,4 +285,102 @@ body {
     border-radius: 50%;
     width: 5px;
     height: 5px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #F5EEDC; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-links span, .nav-icon-link {
+    filter: brightness(0) invert(1); 
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.nav-links li a:hover {
+    color: #DDA853; 
+}
+
+.nav-links li a:hover span {
+    filter: none; 
+    transform: translateY(-2px);
+}
+
+.reviewer-of-month {
+    position: absolute;
+    bottom: -60px;
+    right: 50px;
+    z-index: 100;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    color: #183B4E;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .page-container {
+        flex-direction: column;
+    }
+    
+    .filters-sidebar {
+        width: 100%;
+        box-sizing: border-box;
+        position: static;
+        margin-top: 20px !important;
+    }
+    
+    .main-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .stats-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .reviewer-of-month {
+        position: static;
+        margin: 20px auto;
+        width: fit-content;
+    }
+
+    /* Force the flex container inside review cards to stack vertically */
+    .review-card > div[style*="display: flex"] {
+        flex-direction: column !important;
+    }
+    
+    .review-card img.card-image {
+        width: 100%;
+        height: auto;
+    }
 }
