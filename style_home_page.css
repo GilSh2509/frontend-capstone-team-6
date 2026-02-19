@@ -138,6 +138,10 @@ body {
 
 .filters-list li {
     list-style: none;
+    margin-bottom: 5px;
+}
+
+.filters-list .filter-header {
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;

@@ -29,32 +29,32 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <h3 class="sidebar-title">Find Your Perfect Stay</h3>
         <ul class="filters-list">
-            <li>Location</li>
-            <input type="checkbox"><label for="North">North District</label><br>
-            <input type="checkbox"><label for="Sharon">Sharon</label><br>
-            <input type="checkbox"><label for="Center">Center District</label><br>
-            <input type="checkbox"><label for="Jerousalem">Jerousalem</label><br>
-            <input type="checkbox"><label for="South">South District</label><br>
-            <input type="checkbox"><label for="Eilat">Eilat</label><br><br>
-            <li>Stay Place</li>
-            <input type="checkbox"><label for="hotels">Hotels</label><br>
-            <input type="checkbox"><label for="hotels">B&B's</label><br>
-            <input type="checkbox"><label for="hotels">Boutique Hotels</label><br>
-            <input type="checkbox"><label for="hotels">Guests houses</label><br>
-            <input type="checkbox"><label for="hotels">Villas</label><br><br>
-            <li>Vacation Style</li>
-            <input type="checkbox"><label for="urban">Urban</label><br>
-            <input type="checkbox"><label for="beach Getaway">Beach Getaway</label><br>
-            <input type="checkbox"><label for="nature">Nature</label><br>
-            <input type="checkbox"><label for="romantic">Romantic</label><br>
-            <input type="checkbox"><label for="family friendly">Family Friendly</label><br><br>
-            <li>Meal Plans</li>
-            <input type="checkbox"><label for="Breakfast Included">Breakfast Included</label><br>
-            <input type="checkbox"><label for="Half Board">Half Board</label><br>
-            <input type="checkbox"><label for="Full Board">Full Board</label><br>
-            <input type="checkbox"><label for="All-Inclusive">All-Inclusive</label><br>
-            <input type="checkbox"><label for="Self-Catering">Self-Catering</label><br><br>
-            <a href="Item-List.html"><button class="btn-apply">Apply Filters</button></a>
+            <li class="filter-header">Location</li>
+            <li><input type="checkbox" id="North"><label for="North">North District</label></li>
+            <li><input type="checkbox" id="Sharon"><label for="Sharon">Sharon</label></li>
+            <li><input type="checkbox" id="Center"><label for="Center">Center District</label></li>
+            <li><input type="checkbox" id="Jerousalem"><label for="Jerousalem">Jerousalem</label></li>
+            <li><input type="checkbox" id="South"><label for="South">South District</label></li>
+            <li><input type="checkbox" id="Eilat"><label for="Eilat">Eilat</label></li>
+            <li class="filter-header">Stay Place</li>
+            <li><input type="checkbox" id="hotels"><label for="hotels">Hotels</label></li>
+            <li><input type="checkbox" id="bbs"><label for="bbs">B&B's</label></li>
+            <li><input type="checkbox" id="boutique"><label for="boutique">Boutique Hotels</label></li>
+            <li><input type="checkbox" id="guests"><label for="guests">Guests houses</label></li>
+            <li><input type="checkbox" id="villas"><label for="villas">Villas</label></li>
+            <li class="filter-header">Vacation Style</li>
+            <li><input type="checkbox" id="urban"><label for="urban">Urban</label></li>
+            <li><input type="checkbox" id="beach"><label for="beach">Beach Getaway</label></li>
+            <li><input type="checkbox" id="nature"><label for="nature">Nature</label></li>
+            <li><input type="checkbox" id="romantic"><label for="romantic">Romantic</label></li>
+            <li><input type="checkbox" id="family"><label for="family">Family Friendly</label></li>
+            <li class="filter-header">Meal Plans</li>
+            <li><input type="checkbox" id="breakfast"><label for="breakfast">Breakfast Included</label></li>
+            <li><input type="checkbox" id="halfboard"><label for="halfboard">Half Board</label></li>
+            <li><input type="checkbox" id="fullboard"><label for="fullboard">Full Board</label></li>
+            <li><input type="checkbox" id="allinclusive"><label for="allinclusive">All-Inclusive</label></li>
+            <li><input type="checkbox" id="selfcatering"><label for="selfcatering">Self-Catering</label></li>
+            <li><a href="Item-List.html"><button class="btn-apply">Apply Filters</button></a></li>
         </ul>
     </div>
     `;
@@ -63,25 +63,25 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="filters-sidebar" style="margin-top: 50px;">
         <h3 class="sidebar-title">More Filters</h3>
         <ul class="filters-list">
-            <li>Star Rating</li>
-            <input type="checkbox" id="star5"><label for="star5">★★★★★</label><br>
-            <input type="checkbox" id="star4"><label for="star4">★★★★☆</label><br>
-            <input type="checkbox" id="star3"><label for="star3">★★★☆☆</label><br>
-            <input type="checkbox" id="star2"><label for="star2">★★☆☆☆</label><br>
-            <input type="checkbox" id="star1"><label for="star1">★☆☆☆☆</label><br><br>
-            <li>Price Range</li>
-            <input type="range" min="0" max="1000" value="500" class="slider" id="priceRange" style="width: 100%;" oninput="document.getElementById('priceValue').innerText = this.value">
-            <p>Max Price: $<span id="priceValue">500</span></p><br>
-            <li>Accessibility</li>
-            <input type="checkbox" id="acc_wheel"><label for="acc_wheel">Wheelchair Access</label><br>
-            <input type="checkbox" id="acc_elevator"><label for="acc_elevator">Elevator</label><br><br>
-            <li>Facilities</li>
-            <input type="checkbox" id="prop_pool"><label for="prop_pool">Pool</label><br>
-            <input type="checkbox" id="prop_spa"><label for="prop_spa">Spa</label><br>
-            <input type="checkbox" id="prop_gym"><label for="prop_gym">Gym</label><br>
-            <input type="checkbox" id="prop_wifi"><label for="prop_wifi">Free Wi-Fi</label><br>
-            <input type="checkbox" id="prop_parking"><label for="prop_parking">Parking</label><br>
-            <br><a href="Item-List.html"><button class="btn-apply">Apply Filters</button></a>
+            <li class="filter-header">Star Rating</li>
+            <li><input type="checkbox" id="star5"><label for="star5">★★★★★</label></li>
+            <li><input type="checkbox" id="star4"><label for="star4">★★★★☆</label></li>
+            <li><input type="checkbox" id="star3"><label for="star3">★★★☆☆</label></li>
+            <li><input type="checkbox" id="star2"><label for="star2">★★☆☆☆</label></li>
+            <li><input type="checkbox" id="star1"><label for="star1">★☆☆☆☆</label></li>
+            <li class="filter-header"><label for="priceRange">Price Range</label></li>
+            <li><input type="range" min="0" max="1000" value="500" class="slider" id="priceRange" style="width: 100%;" oninput="document.getElementById('priceValue').innerText = this.value"></li>
+            <li><p>Max Price: $<span id="priceValue">500</span></p></li>
+            <li class="filter-header">Accessibility</li>
+            <li><input type="checkbox" id="acc_wheel"><label for="acc_wheel">Wheelchair Access</label></li>
+            <li><input type="checkbox" id="acc_elevator"><label for="acc_elevator">Elevator</label></li>
+            <li class="filter-header">Facilities</li>
+            <li><input type="checkbox" id="prop_pool"><label for="prop_pool">Pool</label></li>
+            <li><input type="checkbox" id="prop_spa"><label for="prop_spa">Spa</label></li>
+            <li><input type="checkbox" id="prop_gym"><label for="prop_gym">Gym</label></li>
+            <li><input type="checkbox" id="prop_wifi"><label for="prop_wifi">Free Wi-Fi</label></li>
+            <li><input type="checkbox" id="prop_parking"><label for="prop_parking">Parking</label></li>
+            <li><a href="Item-List.html"><button class="btn-apply">Apply Filters</button></a></li>
         </ul>
     </div>
     `;
