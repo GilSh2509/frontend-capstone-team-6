@@ -76,31 +76,33 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* 5) GO TO ITEM DETAILS */
-const magicCard = document.getElementById("hotel-magic");
+const hotelCards = document.querySelectorAll(".hotel-card");
 
-if (magicCard) {
+hotelCards.forEach((card) => {
+  card.style.cursor = "pointer";
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("role", "link");
   
-  magicCard.style.cursor = "pointer";
-  magicCard.setAttribute("tabindex", "0");
-  magicCard.setAttribute("role", "link");
-  magicCard.setAttribute("aria-label", "Open Magic Palace details");
+  if (!card.getAttribute("aria-label")) {
+    const title = card.querySelector(".hotel-title")?.innerText || "View details";
+    card.setAttribute("aria-label", `View details for ${title}`);
+  }
 
   const goToDetails = () => {
-    window.location.href = "item-details.html"; 
+    const id = card.getAttribute("data-id") || "1";
+    window.location.href = `item-details.html?id=${id}`;
   };
 
- 
-  magicCard.addEventListener("click", (e) => {
-   
-    if (e.target.closest("a")) return;
+  card.addEventListener("click", (e) => {
+    // Prevent navigation if clicking on a link or the heart icon
+    if (e.target.closest("a") || e.target.closest(".heart-icon")) return;
     goToDetails();
   });
 
-  
-  magicCard.addEventListener("keydown", (e) => {
+  card.addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       goToDetails();
     }
   });
-}
+});
