@@ -41,7 +41,7 @@ body {
 }
 
 .results-header{
-  background: rgba(221, 168, 83, 0.197);     /* פחות כתום */
+  background: rgba(221, 168, 83, 0.197);     
   border: 1px solid rgba(221, 168, 83, 0.553);
   padding: 18px 40px;
   border-radius: 0;
@@ -53,7 +53,7 @@ body {
 
 .results-title{
   margin: -10PX;
-  font-size: 40Px;     /* יותר מרשים */
+  font-size: 40Px;     
   font-weight: 800;
   letter-spacing: 0.2px;
 }
@@ -64,6 +64,17 @@ body {
   margin: 0 8px;
   font-weight: 600;
 }
+
+.results-description{
+  margin-top: 12px;
+  max-width: 650px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(24,59,78,0.75);
+  border-left: 3px solid #DDA853;
+  padding-left: 12px;
+}
+
 .current-location{
   font-size: 26px;  
   font-weight: 600;
@@ -87,7 +98,7 @@ body {
 
 .filters-sidebar {
     position: sticky;
-    top: 100px; /* Sticks below the navbar */
+    top: 100px; 
     min-width: 250px;
     background-color: white;
     padding: 20px;
@@ -172,7 +183,7 @@ body {
 .hotel-card{
   display: grid;
   grid-template-columns: 280px 1fr;
-  grid-template-rows: auto auto;          /* meta | desc */
+  grid-template-rows: auto auto;          
   column-gap: 18px;
   row-gap: 10px;
   padding: 18px;
@@ -258,7 +269,7 @@ body {
   opacity: 0.9;
 }
 
-/* map link – looks like a real UI link */
+/* map link  */
 .map-link{
   display: inline-flex;
   align-items: center;
@@ -266,7 +277,7 @@ body {
   font-weight: 800;
   color: #27548A;
   text-decoration: none;
-  margin-left: 28px; /* aligns under location text */
+  margin-left: 28px; 
 }
 
 .map-link:hover{
@@ -287,7 +298,7 @@ body {
   grid-column: 2;
   margin-top: 12px;
   padding: 12px 16px;
-  background: rgba(221,168,83,0.12);   /* גוון זהוב שקוף */
+  background: rgba(221,168,83,0.12);   
   border-left: 4px solid #DDA853;
   border-radius: 12px;
   font-size: 13px;
@@ -376,13 +387,13 @@ body {
   }
 
   .filters-sidebar{
-    position: static; /* שלא יהיה sticky במובייל */
+    position: static; 
     width: 100%;
     margin-bottom: 20px;
   }
 
   .hotel-card{
-    grid-template-columns: 1fr;  /* התמונה מעל הטקסט */
+    grid-template-columns: 1fr;  
   }
 
   .hotel-media{
